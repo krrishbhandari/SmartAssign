@@ -4,6 +4,16 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import Signuproutes from "./routes/signup.routes.js";
+import adminRoutes from "./routes/admin.routes.js"
+import classroomRoutes from "./routes/classroom.routes.js"
+import assignmentRoutes from "./routes/assignment.routes.js";
+import jwt from "jsonwebtoken"
+import studentRoutes from "./routes/student.routes.js"
+import facultyRoutes from "./routes/faculty.routes.js"
+import path from "path";
+import uploadRoutes from "./routes/upload.routes.js"
+import errorHandler from "./middleware/error.middleware.js";
 dotenv.config();
 
 const app = express();
@@ -23,6 +33,49 @@ app.use(cors({
 
 app.use(express.json())
 app.use(cookieParser())
+app.use(express.urlencoded({ extended: true }));
+
+// Serve static files from uploads directory
+app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+// Routes
+app.use("/api/auth", Signuproutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/student", studentRoutes);
+app.use("/api/faculty", facultyRoutes);
+app.use('/api/assignments', assignmentRoutes);
+app.use("/api/upload", uploadRoutes);
+
+app.get("/api/auth/status", (req, res) => {
+  const token = req.headers.authorization?.split(" ")[1];
+  if (!token) {
+    return res.json({ isAuthenticated: false });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    res.json({
+      isAuthenticated: true,
+      userRole: decoded.role,
+      userName: decoded.name,
+    });
+  } catch (error) {
+    res.json({ isAuthenticated: false });
+  }
+});
+
+// Serve static files in production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "../server/build")));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../server/build", "index.html"));
+  });
+}
+
+// Error handling middleware (should be last)
+app.use(errorHandler);
+
 
 const port = process.env.PORT || 8080;
 
