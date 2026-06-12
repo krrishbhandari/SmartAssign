@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 
-// const allowedOrigins = ["http://localhost:5173" ] //Client url to be added after deployment 
+const allowedOrigins = ["http://localhost:5173" ] //Client url to be added after deployment 
 
 app.use(cors({
   origin: (origin, callback) => {

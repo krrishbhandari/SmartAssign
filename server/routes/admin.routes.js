@@ -112,4 +112,4 @@ router.delete('/classrooms/:classroomId', authMiddleware('Admin'), async (req, r
     }
 });
 
-module.exports = router; 
+export default router; 

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken"
-import User from "../models/User.model.js";
+import User from "../models/user.js";
 
 const authMiddleware = (requiredRole) => async (req,res,next) => {
     try{
@@ -52,4 +52,4 @@ const authMiddleware = (requiredRole) => async (req,res,next) => {
   }
 };
 
-module.exports = authMiddleware;
+export default authMiddleware;
