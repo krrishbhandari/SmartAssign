@@ -45,4 +45,4 @@ const classroomSchema = new mongoose.Schema({
 
 const Classroom = mongoose.model('Classroom', classroomSchema);
 
-module.exports = Classroom;
+export default Classroom;
