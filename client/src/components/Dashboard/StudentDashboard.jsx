@@ -1,16 +1,16 @@
 // Updated StudentDashboard.jsx
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../context/AuthContext.jsx';
 import axios from 'axios';
-import LoadingSpinner from '../LoadingSpinner';
-import Notification from '../Notification';
-import StudentAssignmentView from '../Assignment/StudentAssignmentView';
-import AssignmentSubmissionModal from '../Assignment/AssignmentSubmissionModal';
-import JoinClassroomModal from '../Classroom/JoinClassroomModal';
-import Header from '../header/Header';
-import { useUpdate } from '../../context/UpdateContext';
-import { getApiUrl, getBaseUrl } from '../../config/api.config';
+import LoadingSpinner from '../LoadingSpinner.jsx';
+import Notification from '../Notification.jsx';
+import StudentAssignmentView from '../Assignment/StudentAssignmentView.jsx';
+import AssignmentSubmissionModal from '../Assignment/AssignmentSubmissionModal.jsx';
+import JoinClassroomModal from '../Classroom/JoinClassroomModal.jsx';
+import Header from '../header/Header.jsx';
+import { useUpdate } from '../../context/UpdateContext.jsx';
+import { getApiUrl, getBaseUrl } from '../../config/api.config.js';
 import './StudentDashboard.css';
 
 const StudentDashboard = () => {

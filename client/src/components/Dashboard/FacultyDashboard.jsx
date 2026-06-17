@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom"; // Remove useHistory, add useLocation
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../context/AuthContext.jsx";
 import axios from "axios";
-import LoadingSpinner from "../LoadingSpinner";
+import LoadingSpinner from "../LoadingSpinner.jsx";
 import Notification from "../Notification";
-import AssignmentModal from "../Assignment/AssignmentModal";
-import GradeSubmissionModal from "../Assignment/GradeSubmissionModal";
-import CreateClassroomModal from "../Classroom/CreateClassroomModal";
-import Header from "../header/Header";
+import AssignmentModal from "../Assignment/AssignmentModal.jsx";
+import GradeSubmissionModal from "../Assignment/GradeSubmissionModal.jsx";
+import CreateClassroomModal from "../Classroom/CreateClassroomModal.jsx";
+import Header from "../header/Header.jsx";
 import "./Dashboard.css";
-import { useUpdate } from "../../context/UpdateContext";
-import { getApiUrl } from "../../config/api.config";
-import { getBaseUrl } from "../../config/api.config";
+import { useUpdate } from "../../context/UpdateContext.jsx";
+import { getApiUrl } from "../../config/api.config.js";
+import { getBaseUrl } from "../../config/api.config.js";
 import * as XLSX from "xlsx";
 import { saveAs } from "file-saver";
 

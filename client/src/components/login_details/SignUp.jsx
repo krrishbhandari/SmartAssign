@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import "./login.css";
-import Header from "../header/Header";
-import { getApiUrl } from "../../config/api.config";
+import Header from "../header/Header.jsx";
+import { getApiUrl } from "../../config/api.config.js";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -64,7 +64,9 @@ const SignUp = () => {
   };
 
   return (
-    <>
+    <div>
+
+    
       <Header />
       <div className="auth-container">
         <div className="auth-form-container">
@@ -146,7 +148,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

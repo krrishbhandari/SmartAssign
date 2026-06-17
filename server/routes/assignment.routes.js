@@ -3,14 +3,17 @@ import Assignment from "../models/assignment.js";
 import Classroom from "../models/classroom.js";
 import User from "../models/user.js";
 import authMiddleware from "../middleware/auth.middleware.js";
-import { sendAssignmentNotifiction } from "../utils/emailService.js"
+// import { sendAssignmentNotification } from "../utils/emailService.js"
 import multer from "multer";
 import path from "path"
 import fs from "fs";
 const router = express.Router();
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Create uploads directory if it doesn't exist
-const uploadsDir = path.join(__dirname, '../uploads/assignments');
+const uploadsDir = 'uploads/assignments';
 if (!fs.existsSync(uploadsDir)) {
     fs.mkdirSync(uploadsDir, { recursive: true });
 }

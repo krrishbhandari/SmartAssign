@@ -310,7 +310,7 @@ const notifySubmissionReceived = async (studentEmail, studentName, assignmentTit
     }
 };
 
-export default {
+export {
     sendInviteEmail,
     notifyNewAssignment,
     notifyAssignmentUpdated,

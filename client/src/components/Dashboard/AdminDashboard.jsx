@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../context/AuthContext.jsx';
 import axios from 'axios';
-import LoadingSpinner from '../LoadingSpinner';
-import Header from '../header/Header';
+import LoadingSpinner from '../LoadingSpinner.jsx';
+import Header from '../header/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { getApiUrl } from '../../config/api.config';
+import { getApiUrl } from '../../config/api.config.js';
 
 const AdminDashboard = () => {
     const [users, setUsers] = useState([]);

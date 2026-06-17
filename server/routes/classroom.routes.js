@@ -393,4 +393,4 @@ router.get('/:id/announcements', authMiddleware(['Faculty', 'Student']), async (
     }
 });
 
-module.exports = router;
+export default router;
