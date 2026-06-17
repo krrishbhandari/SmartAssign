@@ -14,6 +14,9 @@ import facultyRoutes from "./routes/faculty.routes.js"
 import path from "path";
 import uploadRoutes from "./routes/upload.routes.js"
 import errorHandler from "./middleware/error.middleware.js";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 dotenv.config();
 
 const app = express();
@@ -36,7 +39,7 @@ app.use(cookieParser())
 app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from uploads directory
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.use( "/uploads", express.static(path.join(process.cwd(), "uploads")));
 
 // Routes
 app.use("/api/auth", Signuproutes);

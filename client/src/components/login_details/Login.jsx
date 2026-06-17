@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { useAuth } from '../../context/AuthContext.jsx';
 import axios from 'axios';
 import './login.css';
-import Header from '../header/Header';
-import { getApiUrl } from '../../config/api.config';
+import Header from '../header/Header.jsx';
+import { getApiUrl } from '../../config/api.config.js';
 
 const Login = () => {
     const navigate = useNavigate();

@@ -15,7 +15,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 // Initialize Gemini AI with 2.5 Pro optimized for speed
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({
-  model: "gemini-3.5-flash", 
+  model: "gemini-2.5-flash", 
   generationConfig: {
     temperature: 0, 
     topK: 1, 

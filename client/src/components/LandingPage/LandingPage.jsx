@@ -123,11 +123,11 @@ const LandingPage = () => {
             <div className="footer-links">
               <a href="mailto:contact@smartassign.com">
                 <i className="fas fa-envelope"></i>
-                contact@smartassign.com
+                smartassign.team@gmail.com
               </a>
               <a href="tel:+1234567890">
                 <i className="fas fa-phone"></i>
-                +1 (234) 567-890
+                 932-465-9348
               </a>
             </div>
           </div>
