@@ -25,7 +25,7 @@ SmartAssign is a production-ready applied AI system designed to reduce assignmen
 
 ---
 
-# Problem Statement
+# 🎯 Problem Statement
 
 Educational institutions struggle to provide timely and consistent feedback as class sizes increase. Faculty members spend significant time creating marking schemes and manually evaluating submissions, leading to delayed feedback cycles and inconsistent grading standards.
 
@@ -33,7 +33,7 @@ Fully automated grading systems are risky in academic environments due to halluc
 
 ---
 
-# Solution Overview
+# 💡 Solution Overview
 
 SmartAssign acts as a **decision-support system** for educators rather than an autonomous grader.
 
@@ -48,7 +48,7 @@ The system is intentionally conservative, favoring reliability and instructor co
 
 ---
 
-# Key Engineering Decisions
+# 🚀 Key Engineering Decisions
 
 ## Human-in-the-Loop by Design
 
@@ -68,7 +68,7 @@ LLM inference latency is non-deterministic. The backend is designed with asynchr
 
 ---
 
-# AI System Design
+# ✅ AI System Design
 
 ## Model & Inference
 
@@ -139,7 +139,7 @@ This design choice prioritizes trust and transparency over raw automation.
 
 ---
 
-# Tech Stack
+# ⚡ Tech Stack
 
 ## Backend
 
