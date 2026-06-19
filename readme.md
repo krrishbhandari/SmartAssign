@@ -1,13 +1,6 @@
 # SmartAssign
 
-![License](https://img.shields.io/badge/license-MIT-green)
-![Node.js](https://img.shields.io/badge/Node.js-18.x-brightgreen)
-![Express.js](https://img.shields.io/badge/Express.js-Backend-lightgrey)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
-![React](https://img.shields.io/badge/React-Frontend-blue)
-![LangChain](https://img.shields.io/badge/LangChain-LLM_Framework-orange)
-![Llama-3-70B](https://img.shields.io/badge/LLM-Llama--3--70B-purple)
-![Groq](https://img.shields.io/badge/Inference-Groq-red)
+
 
 An AI-assisted assignment evaluation system that uses Large Language Models and retrieval-based reasoning to help educators generate reference answers and provide structured, draft feedback on student submissions.
 
@@ -263,3 +256,5 @@ npm start
 ### Disclaimer
 
 SmartAssign is designed as an educational decision-support system. Final grading authority always remains with instructors. AI-generated outputs should be reviewed and approved before being shared with students.
+
+Made with love by Krish Bhandari
