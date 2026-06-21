@@ -1,4 +1,4 @@
-
+This project follows consistent, review-friendly engineering  so collaboration stays fast and safe.. Some deom changes.
 
 1) Branching Rules
 
