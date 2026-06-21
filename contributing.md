@@ -1,4 +1,4 @@
-This project follows consistent, review-friendly engineering  so collaboration stays fast and safe.
+
 
 1) Branching Rules
 
