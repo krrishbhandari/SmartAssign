@@ -1,12 +1,13 @@
 # SmartAssign
 
-
-
 An AI-assisted assignment evaluation system that uses Large Language Models and retrieval-based reasoning to help educators generate reference answers and provide structured, draft feedback on student submissions.
 
 Designed as a decision-support system, not a fully autonomous grader.
 
 ---
+# Live Demo
+Coming soon
+
 
 # TLDR
 
@@ -238,7 +239,7 @@ npm start
 
 # Author
 
-## Harsh Lad
+## Krish Bhandari
 
 **Applied AI Engineer**
 
@@ -252,4 +253,4 @@ npm start
 
 SmartAssign is designed as an educational decision-support system. Final grading authority always remains with instructors. AI-generated outputs should be reviewed and approved before being shared with students.
 
-Made with love by Krish Bhandari
+**Built with ❤️ by Krish Bhandari**
