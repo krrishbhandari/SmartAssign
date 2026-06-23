@@ -238,7 +238,7 @@ npm start
 
 # Author
 
-## Harsh Lad
+## Krish Bhandari
 
 **Applied AI Engineer**
 
