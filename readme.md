@@ -22,7 +22,7 @@ Fully automated grading systems are risky in academic environments due to halluc
 
 ---
 
-# 💡 Solution Overview
+# 💡 Solution 
 
 SmartAssign acts as a **decision-support system** for educators rather than an autonomous grader.
 
