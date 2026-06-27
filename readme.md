@@ -22,7 +22,7 @@ Fully automated grading systems are risky in academic environments due to halluc
 
 ---
 
-# 💡 Solution Overview In Detail By Krish
+# 💡 Solution Overview 
 
 SmartAssign acts as a **decision-support system** for educators rather than an autonomous grader.
 
@@ -253,4 +253,4 @@ npm start
 
 SmartAssign is designed as an educational decision-support system. Final grading authority always remains with instructors. AI-generated outputs should be reviewed and approved before being shared with students.
 
-**Built with ❤️ by Krish Bhandari**
+**Built with ❤️ by Krish **
