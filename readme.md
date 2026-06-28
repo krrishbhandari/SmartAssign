@@ -253,4 +253,4 @@ npm start
 
 SmartAssign is designed as an educational decision-support system. Final grading authority always remains with instructors. AI-generated outputs should be reviewed and approved before being shared with students.
 
-**Built with ❤️ by Krish **
+**Built with ❤️ by Krish Bhandari**
